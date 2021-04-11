@@ -1,0 +1,59 @@
+.carousel-inner{
+    height: 100% !important;
+}
+
+.carousel-item{
+    height: 100% !important;
+}
+
+.w-100{
+    height: 100% !important;
+}
+
+.textOnCarousel{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstsection{
+    position: relative;
+}
+
+.textCarousel{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textCarousel p{
+    width: 50%;
+}
+
+.carousel-item img{
+    filter: brightness(50%);
+}
+
+.navbar{
+    position: fixed !important;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}

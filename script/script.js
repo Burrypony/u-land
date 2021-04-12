@@ -1,8 +1,6 @@
-    window.onresize = loadHeight;
-    loadHeight()
-    function loadHeight() {
-        console.log("test");
-        var caruselHeight = window.screen.height;
-        var width = window.screen.width;
-        document.getElementById('carouselExampleSlidesOnly').setAttribute("style", "height:calc(" + caruselHeight + "px - 160px) !important")
-    }
+$(function() {
+    $('a[href*="#"]').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+  });

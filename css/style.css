@@ -7,7 +7,12 @@
 
 
 * {
-    font-family: 'loraRegular', Courier, monospace
+    font-family: 'loraRegular', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .carousel-inner {
@@ -79,12 +84,14 @@
     padding: 50px;
     width: 65%;
     margin: 0 auto;
+    height: 100vh;
+    position: relative;
 }
 
 ul li {
     text-align: left;
-    font-weight: bolder;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 5px 0;
 }
 
 ul {
@@ -257,4 +264,23 @@ path {
 
 footer{
     padding-top: 75px;
+}
+
+#aboutUS{
+    flex-direction: row !important;
+}
+
+#aboutUS p, #aboutUS li{
+    text-align: left;
+}
+
+.aboutUsSecondImg{
+    position: absolute;
+    right: -395px;
+    bottom: 100px;
+    width: 50%;
+}
+
+.aboutUsSecondImg img{
+    width: 100%;
 }

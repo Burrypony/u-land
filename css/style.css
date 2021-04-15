@@ -30,7 +30,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 35%;
+    top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,11 +50,11 @@
 
 .textCarousel p {
     width: 50%;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 .textCarousel h1 {
-    font-size: 60px;
+    font-size: 4vw;
     font-weight: bold;
 }
 
@@ -69,6 +69,7 @@
     z-index: 9999;
     top: 0;
     left: 0;
+    height: 60px;
 }
 
 .section {
@@ -113,7 +114,7 @@ ul {
 }
 
 svg {
-    right: -134px;
+    right: -110px;
     top: 42px;
     width: 340px;
     transform: translateY(-50%) translateX(-50%);
@@ -152,8 +153,6 @@ path {
 }
 
 .demo a {
-    position: absolute;
-    left: 48.5%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);

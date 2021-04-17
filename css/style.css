@@ -8,7 +8,6 @@
 
 * {
     font-family: 'loraRegular', Courier, monospace;
-    box-sizing: border-box;
 }
 
 body{
@@ -87,7 +86,6 @@ body{
     margin: 0 auto;
     height: 100vh;
     position: relative;
-    overflow-y: hidden;
 }
 
 .wrapper{
@@ -96,7 +94,7 @@ body{
 
 ul li {
     text-align: left;
-    font-size: 20px;
+    font-size: calc(.375rem + 1vw);
     padding: 5px 0;
 }
 
@@ -122,7 +120,7 @@ ul {
 .card-img,
 .card-img-bottom,
 .card-img-top {
-    max-height: 260px;
+    max-height: 238px;
 }
 
 svg {
@@ -243,11 +241,11 @@ path {
 }
 
 .section p {
-    font-size: max(1.3em, 16px);
+    font-size: max(1em, 16px);
 }
 
 #carouselExampleCaptions .carousel-inner {
-    max-height: 650px;
+    max-height: 700px;
 }
 
 
@@ -296,4 +294,184 @@ header{
     top: 0;
     height: 60px;
     z-index: 9999;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+.container {
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+video{
+    filter: brightness(35%);
+    width: 100%;
+}
+
+.d-flex{
+    justify-content: center;
+    
+}
+
+.plans {
+    display: inline-block;
+    width: 300px;
+    margin: 60px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border: 1px solid #39C6C4;
+    border-radius: 15px;
+    min-height: 350px;
+}
+
+.pricing-list:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pricing-list:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.title {
+    position: relative;
+    text-transform: uppercase;
+    margin: 20px 0 30px;
+    padding: 0 0 20px;
+    border-bottom: dashed 1px;
+    text-align: center;
+    color: #39C6C4;
+    min-height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    margin: auto;
+    color: #e4ffff;
+    background: #39C6C4;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.feature {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.feature li {
+    padding: 20px 0;
+}
+
+input[type=button] {
+    width: 100%;
+    background: #39C6C4;
+    color: #e4ffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 30px;
+    cursor: pointer;
+    border: none;
+    margin-top: 40px;
+}
+
+.plans:hover{
+    border: 1px solid 6886CA;
+    border-radius: 15px;
+}
+
+input[type=button]:hover {
+    background: #2A6391;
+}
+
+@media all and (max-width: 768px) {
+
+    .pricing-list {
+        display: block;
+        margin: 25px auto;
+        width: 95%;
+        background: #BDD7E3;
+        text-align: center;
+    }
+
+    .plans {
+        margin: 0 auto;
+        border: none;
+        margin: 10px;
+
+    }
+
+  .pricing-list:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .pricing-list:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+  
+    .main-plan {
+        background: #BDD7E3;
+        margin: 0 auto;
+        border: none;
+    }
+}
+
+#carouselExampleCaptions{
+    width: 85%;
+}
+
+.h2, h2{
+    font-size: 1.5rem !important;
+}
+
+#pricing h1{
+    padding-bottom: 40px;
+}
+
+footer form{
+    width: 35%;
+    text-align: center;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 25px;
+}
+
+.form-group{
+    padding: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing .overlay img{
+    width: 100%;
+}
+
+.form-group label{
+    color: #212529;
 }

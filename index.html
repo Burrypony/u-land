@@ -7,7 +7,6 @@
   <title>u-link</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/magic.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">/>
 </head>
 
@@ -17,7 +16,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
+            alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Про нас</a>
+              <a class="nav-link active" aria-current="page" href="#aboutUS">Про нас</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Послуги</a>
+              <a class="nav-link active" aria-current="page" href="#services">Послуги</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Ціни</a>
+              <a class="nav-link active" aria-current="page" href="#pricing">Ціни</a>
             </li>
           </ul>
           <a href="tel:+380982206889">+38 098 220 6889</a>
@@ -75,63 +75,71 @@
   </section>
   <!-- about us  -->
   <section class="section" id="aboutUS">
-    <div>
-      <img src="" alt="">
+    <div class="overlay">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="img/videoplayback.mp4" type="video/mp4">
+      </video>
     </div>
-    <div class="wrapper">
-      <h1 class="animate__animated" data-aos="fade-right">Про нас</h1>
-      <p data-aos="fade-left">В компанії працюють фахівці зі стажем і досвідом роботи. Основу колективу складають
-        інженери, дизайнери та майстри вузького профілю: професійні електрики, сантехніки та монтажники.
-        Ми знаємо, що далеко не кожен наш клієнт розбирається в тонкощах догляду за рослинами, тому беремо всі складні
-        розрахунки і налаштування на себе:
-      </p>
-      <ul>
-        <li data-aos="fade-up-right">Розподіляємо рослини за зонами споживання сонячних променів і вологи</li>
-        <li data-aos="fade-up-left">Робимо розрахунок витрат споживання води для кожної зони рослинності</li>
-        <li data-aos="fade-up-right">Налаштовуємо зрошувальні системи і контролери таким чином, щоб система сама все
-          робила без вашої участі</li>
+    <div class="container h-100">
+      <div class="d-flex text-center align-items-center">
+        <div class="wrapper">
+          <h1 class="animate__animated" data-aos="fade-right">Про нас</h1>
+          <p data-aos="fade-left">В компанії працюють фахівці зі стажем і досвідом роботи. Основу колективу складають
+            інженери, дизайнери та майстри вузького профілю: професійні електрики, сантехніки та монтажники.
+            Ми знаємо, що далеко не кожен наш клієнт розбирається в тонкощах догляду за рослинами, тому беремо всі
+            складні
+            розрахунки і налаштування на себе:
+          </p>
+          <ul>
+            <li data-aos="fade-up-right">Розподіляємо рослини за зонами споживання сонячних променів і вологи</li>
+            <li data-aos="fade-up-left">Робимо розрахунок витрат споживання води для кожної зони рослинності</li>
+            <li data-aos="fade-up-right">Налаштовуємо зрошувальні системи і контролери таким чином, щоб система сама все
+              робила без вашої участі</li>
 
-        <li data-aos="fade-left">Постійно працюємо над створенням привабливої цінової політики</li>
+            <li data-aos="fade-left">Постійно працюємо над створенням привабливої цінової політики</li>
 
-        <li data-aos="fade-up-right">Працюємо безпосередньо з постачальниками будматеріалів і комплектуючих, що дозволяє, якщо не знижувати ціни, то на тлі збільшення проблем в
-          економіці, утримувати ціни на одному рівні</li>
-        <li data-aos="fade-up-left">Регулярно проводимо акції, надаємо знижки і пільгові умови на післягарантійне
-          обслуговування об'єктів</li>
-      </ul>
-    </div>
-    <div class="aboutUsSecondImg">
-      <img src="img/OjOWBfTemaX1.gif" alt="">
+            <li data-aos="fade-up-right">Працюємо безпосередньо з постачальниками будматеріалів і комплектуючих, що
+              дозволяє, якщо не знижувати ціни, то на тлі збільшення проблем в
+              економіці, утримувати ціни на одному рівні</li>
+            <li data-aos="fade-up-left">Регулярно проводимо акції, надаємо знижки і пільгові умови на післягарантійне
+              обслуговування об'єктів</li>
+          </ul>
+        </div>
+      </div>
+      <section id="section07" class="demo">
+        <a href="#services"><span></span><span></span><span></span>Scroll</a>
+      </section>
     </div>
   </section>
   <!-- services -->
-  <section class="section">
+  <section class="section" id="services">
     <h1>Послуги</h1>
-    <div class="services">
-      <div class="card" style="width: 15rem;" data-aos="zoom-in">
+    <div class="services wrapper">
+      <div class="card " style="width: 15rem;" data-aos="zoom-in">
         <img src="img/avtomaticheskaya_sistema_poliva-min.jpg" class="card-img-top" style="width:100%" alt="...">
         <div class="card-body">
           <h5 class="card-title">монтаж системи автоматичного поливу</h5>
         </div>
       </div>
-      <div class="card" style="width: 15rem;" data-aos="zoom-in">
+      <div class="card " style="width: 15rem;" data-aos="zoom-in">
         <img src="img/turf-boards.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">укладання газону</h5>
         </div>
       </div>
-      <div class="card" style="width: 15rem;" data-aos="zoom-in">
+      <div class="card " style="width: 15rem;" data-aos="zoom-in">
         <img src="img/villa-1548185_1920.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">озеленення ділянок</h5>
         </div>
       </div>
-      <div class="card" style="width: 15rem;" data-aos="zoom-in">
+      <div class="card " style="width: 15rem;" data-aos="zoom-in">
         <img src="img/c959c4b649cadcdc6a805cf59415ae0f.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">створення багаторічних клумб</h5>
         </div>
       </div>
-      <div class="card" style="width: 15rem;" data-aos="zoom-in">
+      <div class="card " style="width: 15rem;" data-aos="zoom-in">
         <img src="img/c04a20a6a4e83545eb62d3ef82636aaa.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">ландшафтний дизайн</h5>
@@ -141,11 +149,40 @@
   </section>
   <!-- pricing -->
 
-  <section class="section">
-    <h1>Ціни</h1>
+  <section class="section" id="pricing">
+    <div class="overlay">
+     <img src="img/ImmaterialMetallicBellfrog-size_restricted.gif" alt="">
+    </div>
+    <div class="container h-100">
+      <h1>Ціни</h1>
+      <div class="wrapper d-flex justify-content-around flex-wrap">
+        <div class="plans" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <h2 class="title">газон універсальний</h2>
+          <p class="price">₴65 / м²</p>
+          <input type="button" value="замовити">
+        </div>
+        <div class="plans" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <h2 class="title">газон спортивний</h2>
+          <p class="price">₴65 / м²</p>
+          <input type="button" value="замовити">
+        </div>
+        <div class="plans" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <h2 class="title">газон елітний</h2>
+          <p class="price">₴70 / м²</p>
+          <input type="button" value="замовити">
+        </div>
+        <div class="plans" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <h2 class="title">Система автоматичного поливу під ключ</h2>
+          <p class="price"> від ₴4000 / 100м²</p>
+          <input type="button" value="замовити">
+        </div>
+      </div>
+    </div>
+
   </section>
   <!-- Projects -->
-  <section>
+  <section class="section">
+    <h1>Проекти</h1>
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -178,26 +215,31 @@
       </button>
     </div>
   </section>
-  <!-- contacts -->
-  <section>
-
-  </section>
 </body>
 <footer>
-  <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-    <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-      style="border:0" allowfullscreen></iframe>
+  <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+      marginwidth="0"
+      src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%9A%D0%B8%D0%B5%D0%B2,%D1%83%D0%BB.%D1%81%D0%BF%D0%B0%D1%81%D0%BA%D0%B0%D1%8F,%2027/12+(My%20Business%20Name)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
   </div>
-  <section class="section">
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <div class="container d-flex justify-content-around flex-row">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Ваше імя</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Номер телефону</label>
+        <input type="tel" class="form-control" id="exampleInputPassword1">
+      </div>
+      <button type="submit" class="btn btn-primary">Відправити заяву</button>
+    </form>
+    <div>
+      <span class="display-6" style="color: #212529;">Контактна інформація:</span>
+      <a href="tel:+380982206889">+38 098 220 6889</a>
+      <a href="mailto:hunter.eur@gmail.com">hunter.eur@gmail.com</a>
     </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-  </section>
+  </div>
+  
 </footer>
 <script src="script/jQuery.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

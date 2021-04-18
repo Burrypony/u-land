@@ -34,10 +34,12 @@ body{
     position: absolute;
     left: 0;
     right: 0;
-    top: 100px;
+    top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    height: 100%;
 }
 
 .firstsection {
@@ -54,11 +56,10 @@ body{
 
 .textCarousel p {
     width: 50%;
-    font-size: 2vw;
+    font-size: 1.5rem;
 }
 
 .textCarousel h1 {
-    font-size: 4vw;
     font-weight: bold;
 }
 
@@ -93,8 +94,6 @@ body{
 }
 
 ul li {
-    text-align: left;
-    font-size: calc(.375rem + 1vw);
     padding: 5px 0;
 }
 
@@ -113,8 +112,10 @@ ul {
 }
 
 .card {
-    margin: 40px;
+    margin: 1em;
     cursor: pointer;
+    width: 15rem;
+    min-width: 320px;
 }
 
 .card-img,
@@ -123,21 +124,23 @@ ul {
     max-height: 238px;
 }
 
-svg {
-    right: -110px;
+
+.textOnCarousel svg {
+    right: 0;
+    left: 0;
     top: 42px;
+    margin: 0 auto;
     width: 340px;
-    transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-10%);
     filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.3));
     position: relative;
-
 }
 
 text {
     font-size: 30px;
 }
 
-path {
+.textOnCarousel path {
     cursor: pointer;
     animation: blob 2s infinite forwards;
     transform-origin: 50% 50%;
@@ -172,7 +175,9 @@ path {
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
+    
 }
+
 
 .demo a:hover {
     color: #a8dadc;
@@ -245,7 +250,7 @@ path {
 }
 
 #carouselExampleCaptions .carousel-inner {
-    max-height: 700px;
+    max-height: 580px;
 }
 
 
@@ -269,11 +274,12 @@ footer{
 }
 
 #aboutUS{
-    flex-direction: row !important;
+    overflow: hidden;
 }
 
 #aboutUS p, #aboutUS li{
     text-align: left;
+    font-size: 1.5rem;
 }
 
 .aboutUsSecondImg{
@@ -281,6 +287,10 @@ footer{
     right: -395px;
     bottom: 100px;
     width: 50%;
+}
+
+#aboutUS .container{
+    justify-content: space-around;
 }
 
 .aboutUsSecondImg img{
@@ -312,11 +322,12 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
+    height: 100%;
 }
 
 video{
     filter: brightness(35%);
-    width: 100%;
 }
 
 .d-flex{
@@ -324,10 +335,14 @@ video{
     
 }
 
+@media screen and (min-width:1400px) {
+    video { width: 100%;}
+}
+
 .plans {
     display: inline-block;
     width: 300px;
-    margin: 60px;
+    margin: 2rem;
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     padding: 10px;
@@ -395,7 +410,7 @@ input[type=button] {
 }
 
 .plans:hover{
-    border: 1px solid 6886CA;
+    border: 1px solid #6886CA;
     border-radius: 15px;
 }
 
@@ -418,6 +433,10 @@ input[type=button]:hover {
         border: none;
         margin: 10px;
 
+    }
+
+    .title{
+        font-size: 18px !important;
     }
 
   .pricing-list:first-child {
@@ -456,6 +475,12 @@ footer form{
     border: 2px solid black;
     border-radius: 20px;
     margin: 25px;
+    min-width: 320px;
+}
+
+.secondDiv{
+    align-items: center;
+    width: 75%;
 }
 
 .form-group{
@@ -470,8 +495,104 @@ footer{
 
 #pricing .overlay img{
     width: 100%;
+    height: 100%;
 }
 
 .form-group label{
     color: #212529;
+}
+
+.contactInfo svg{
+    margin-right: 15px;
+}
+
+#pricing h1{
+    color: #39C6C4;
+}
+
+@media (min-width: 992px){
+    .show-mobile{
+        display: none;
+    }
+
+    .navbar-expand-lg .navbar-collapse{
+        height: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .show-desctop{
+        display: none;
+    }
+    .card{
+        width: 11rem;
+    }
+    #aboutUS p, #aboutUS li {
+        font-size: 1.125rem;
+    }
+}
+
+#navbarSupportedContent{
+    background-color: white;
+}
+
+.container-fluid{
+    height: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .card{
+        width: 11rem;
+    }
+    .section{
+        padding: 25px;
+    }
+    .h5, h5{
+        font-size: 1rem !important;
+    }
+    .card-img, .card-img-bottom, .card-img-top{
+        max-height: 150px;
+    }
+    
+}
+
+@media screen and (max-width:480px){
+    .textCarousel p {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    .section{
+        padding: 10px;
+    } 
+    #aboutUS p, #aboutUS li{
+        font-size: 1rem;
+    }
+    ol, ul{
+        padding: 0.5rem !important;
+    }
+    ul{
+        padding: 0;
+    }
+    .section h1{
+        padding-bottom: 20px;
+    }
+    .demo{
+        top: -10px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:400px){
+    .textCarousel p {
+        font-size: 1rem;
+    }
+    .textOnCarousel svg{
+        width: 210px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    video{
+        height: 100%;
+    }
 }

@@ -122,14 +122,14 @@ ul {
 .card {
     margin: 1em;
     cursor: pointer;
-    width: 15rem;
+    width: 12rem;
     min-width: 320px;
 }
 
 .card-img,
 .card-img-bottom,
 .card-img-top {
-    max-height: 238px;
+    max-height: 170px;
 }
 
 .card-title{

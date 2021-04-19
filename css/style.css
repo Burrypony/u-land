@@ -295,6 +295,26 @@ footer{
     width: 50%;
 }
 
+#services .demo a{
+    color: #6ba5a7;
+}
+
+#services .section07 a span {
+    color: #6ba5a7;
+    border-left: 1px solid #6ba5a7;
+    border-bottom: 1px solid #6ba5a7;
+}
+
+#pricing .demo a{
+    color: #6ba5a7;
+}
+
+#pricing .section07 a span {
+    color: #6ba5a7;
+    border-left: 1px solid #6ba5a7;
+    border-bottom: 1px solid #6ba5a7;
+}
+
 #aboutUS .container{
     justify-content: space-around;
 }
@@ -539,6 +559,12 @@ footer{
 }
 
 @media (max-width: 992px) {
+    .navbar-collapse{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
     .show-desctop{
         display: none;
     }
@@ -576,6 +602,26 @@ footer{
 }
 
 @media screen and (max-width:480px){
+    .demo a{
+        font-size: 13px;
+    }
+
+    .section07 a span {
+        width: 10px;
+        height: 10px;
+        margin-left: -7px;
+        top: 12px;
+    }
+
+    .section07 a span:nth-of-type(2){
+        top: 19px;
+    }
+
+    .section07 a span:nth-of-type(3) {
+        top: 26px;
+    }
+
+
     .title {
         min-height: 81px;
         margin: 0;

@@ -144,6 +144,10 @@ text {
     cursor: pointer;
     animation: blob 2s infinite forwards;
     -webkit-animation: blob 2s infinite forwards;
+    -webkit-animation-name: blob;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: infinite;
+    -webkit-animation-fill-mode: forwards;
     transform-origin: 50% 50%;
 }
 
@@ -184,7 +188,8 @@ text {
     color: #a8dadc;
 }
 
-#section07 a span {
+
+.section07 a span {
     position: absolute;
     top: 0;
     left: 50%;
@@ -201,18 +206,18 @@ text {
     box-sizing: border-box;
 }
 
-#section07 a span:nth-of-type(1) {
+.section07 a span:nth-of-type(1) {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
 }
 
-#section07 a span:nth-of-type(2) {
+.section07 a span:nth-of-type(2) {
     top: 16px;
     -webkit-animation-delay: .15s;
     animation-delay: .15s;
 }
 
-#section07 a span:nth-of-type(3) {
+.section07 a span:nth-of-type(3) {
     top: 32px;
     -webkit-animation-delay: .3s;
     animation-delay: .3s;
@@ -506,9 +511,21 @@ footer{
 .contactInfo svg{
     margin-right: 15px;
 }
+.contactInfo{
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,.9);
+    text-decoration: none;
+}
 
 #pricing h1{
     color: #39C6C4;
+}
+
+@media (max-width: 1024px)  {
+    .section{
+        padding: 0;
+    }
 }
 
 @media (min-width: 992px){
@@ -559,6 +576,54 @@ footer{
 }
 
 @media screen and (max-width:480px){
+    .title {
+        min-height: 81px;
+        margin: 0;
+        padding: 10px;
+    } 
+
+    .plans{
+        min-height: 245px;
+    }
+
+    .price{
+        background: white;
+        color: #39C6C4;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    .section p{
+        font-size: 12px;
+    }
+
+    input[type=button]{
+        margin-top: 0;
+    }
+
+    .card{
+        width: 8rem;
+    }
+    .card-img, .card-img-bottom, .card-img-top {
+        max-height: 110px;
+    }
+
+    .h5, h5{
+        font-size: 0.75rem !important;
+    }
+
+    .title{
+        font-size: 13px !important;
+    }
+
+    .card-body{
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .textCarousel p {
         width: 90%;
         font-size: 1.2rem;
@@ -567,7 +632,11 @@ footer{
         padding: 10px;
     } 
     #aboutUS p, #aboutUS li{
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+
+    #aboutUS p span{
+        display: none;
     }
     ol, ul{
         padding: 0.5rem !important;
@@ -582,6 +651,13 @@ footer{
         top: -10px;
         position: relative;
     }
+    #aboutUS ul{
+        display: none;
+    }
+}
+
+.textCarousel p{
+    margin-bottom: -140px;
 }
 
 @media screen and (max-width:400px){
@@ -597,4 +673,10 @@ footer{
     video{
         height: 100%;
     }
+}
+
+
+main{
+    position: relative;
+    top: -25px;
 }

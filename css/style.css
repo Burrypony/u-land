@@ -718,7 +718,7 @@ footer{
         padding: 10px;
     } 
     #aboutUS p, #aboutUS li{
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
     }
 
     #aboutUS p span{

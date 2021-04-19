@@ -24,6 +24,9 @@ body{
 
 #carouselExampleSlidesOnly {
     height: 100vh;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
 .w-100 {
@@ -87,6 +90,9 @@ body{
     margin: 0 auto;
     height: 100vh;
     position: relative;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
 .wrapper{
@@ -367,8 +373,8 @@ video{
 
 .plans {
     display: inline-block;
-    width: 300px;
-    margin: 2rem;
+    width: 250px;
+    margin: 1rem;
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     padding: 10px;

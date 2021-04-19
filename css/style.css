@@ -663,6 +663,14 @@ footer{
         font-size: 11px;
     }
 
+    #services h1 {
+        color: #39C6C4;
+    }
+
+    #aboutUS h1 {
+        color: #39C6C4;
+    }
+
     input[type=button]{
         margin-top: 0;
         font-weight: normal;
@@ -723,6 +731,15 @@ footer{
         display: none;
     }
 }
+
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+  }
 
 .textCarousel p{
     margin-bottom: -140px;

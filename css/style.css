@@ -670,7 +670,7 @@ footer{
     }
 
     .section p{
-        font-size: 11px;
+        font-size: 11px !important;
     }
 
     #services h1 {

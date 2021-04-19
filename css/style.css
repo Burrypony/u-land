@@ -423,12 +423,11 @@ video{
     margin: auto;
     color: #e4ffff;
     background: #39C6C4;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    line-height: 100px;
-    font-size: 19px;
-    font-weight: bold;
+    line-height: 120px;
+    font-size: 16px !important;
 }
 
 .feature {

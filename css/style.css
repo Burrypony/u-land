@@ -143,6 +143,7 @@ text {
 .textOnCarousel path {
     cursor: pointer;
     animation: blob 2s infinite forwards;
+    -webkit-animation: blob 2s infinite forwards;
     transform-origin: 50% 50%;
 }
 
@@ -534,6 +535,7 @@ footer{
 
 #navbarSupportedContent{
     background-color: white;
+    justify-content: space-around;
 }
 
 .container-fluid{

@@ -152,6 +152,11 @@ ul {
 text {
     font-size: 30px;
 }
+.contactInfo,
+.nav-link{
+    font-size: 18px;
+    font-weight: bold;
+} 
 
 .textOnCarousel path {
     cursor: pointer;

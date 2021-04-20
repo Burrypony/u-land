@@ -110,7 +110,7 @@ ul {
 }
 
 .section h1 {
-    padding-bottom: 70px;
+    padding-bottom: 35px;
 }
 
 .services {
@@ -310,7 +310,7 @@ footer{
 
 #aboutUS p, #aboutUS li{
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
 }
 
 .aboutUsSecondImg{
@@ -764,11 +764,11 @@ a[x-apple-data-detectors] {
     }
 }
 
-@media screen and (max-width:1300px) {
+/* @media screen and (max-width:1300px) {
     video{
         height: 100%;
     }
-}
+} */
 
 
 main{

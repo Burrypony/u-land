@@ -11,3 +11,10 @@ $(function () {
 AOS.init({
   duration: 1200,
 })
+
+
+$("submit").on('click', 'a', function(e){
+  e.preventDefault();
+  e.stopImmediatePropagation();
+  return false;
+});

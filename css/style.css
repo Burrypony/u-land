@@ -8,6 +8,7 @@
 
 * {
     font-family: 'loraRegular', Courier, monospace;
+    letter-spacing: 1px;
 }
 
 body{
@@ -90,11 +91,9 @@ body{
     padding: 50px;
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
     position: relative;
     min-height: 100vh;
-    /* mobile viewport bug fix */
-    min-height: -webkit-fill-available;
 }
 
 .wrapper{
@@ -174,6 +173,7 @@ text {
     display: flex;
     align-items: center;
     padding: 0 !important;
+    justify-content: center;
 }
 
 #services{
@@ -383,6 +383,20 @@ header{
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    min-height: 100vh;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 50px;
+}
+
+.logo img{
     height: 100%;
 }
 
@@ -401,13 +415,13 @@ video{
 
 .plans {
     display: inline-block;
-    width: 235px;
+    width: 285px;
     margin: 1rem;
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     padding: 10px;
-    border: 1px solid #39C6C4;
-    border-radius: 15px;
+    border: 1px solid #39C6C4 !important;
+    border-radius: 15px !important;
     min-height: 350px;
 }
 
@@ -424,8 +438,6 @@ video{
 .title {
     position: relative;
     text-transform: uppercase;
-    margin: 20px 0 30px;
-    padding: 0 0 20px;
     border-bottom: dashed 1px;
     text-align: center;
     color: #39C6C4;
@@ -439,10 +451,10 @@ video{
     margin: auto;
     color: #e4ffff;
     background: #39C6C4;
-    width: 120px;
-    height: 120px;
+    width: 145px;
+    height: 145px;
     border-radius: 50%;
-    line-height: 120px;
+    line-height: 144px;
     font-size: 16px !important;
 }
 
@@ -631,7 +643,30 @@ footer{
     .card-img, .card-img-bottom, .card-img-top{
         max-height: 150px;
     }
-    
+    .price{
+        background: white;
+        color: #39C6C4;
+        width: auto;
+        height: auto;
+        margin: 0;
+        font-weight: normal;
+        line-height: 100px;
+    }
+    .textCarousel p {
+        width: 90%;
+        font-size: 1.2rem;
+
+    }
+    .textOnCarousel svg{
+        width: 210px;
+    }
+    #aboutUS p, #aboutUS li{
+        font-size: 1.2rem !important;
+        text-align: center;
+    }
+    #aboutUS ul{
+        display: none;
+    }
 }
 
 @media screen and (max-width:480px){
@@ -665,14 +700,7 @@ footer{
         min-height: 245px;
     }
 
-    .price{
-        background: white;
-        color: #39C6C4;
-        width: auto;
-        height: auto;
-        margin: 0;
-        font-weight: normal;
-    }
+    
 
     .section p{
         font-size: 11px !important;
@@ -714,17 +742,11 @@ footer{
         justify-content: center;
     }
 
-    .textCarousel p {
-        width: 90%;
-        font-size: 1.2rem;
 
-    }
     .section{
         padding: 10px;
     } 
-    #aboutUS p, #aboutUS li{
-        font-size: 1.2rem !important;
-    }
+
 
     #aboutUS p span{
         display: none;
@@ -742,9 +764,7 @@ footer{
         top: -10px;
         position: relative;
     }
-    #aboutUS ul{
-        display: none;
-    }
+
 }
 
 a[x-apple-data-detectors] {
@@ -764,10 +784,7 @@ a[x-apple-data-detectors] {
     .textCarousel p {
         font-size: 1rem;
     }
-    .textOnCarousel svg{
-        width: 210px;
-    }
-}
+
 
 /* @media screen and (max-width:1300px) {
     video{

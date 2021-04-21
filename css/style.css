@@ -69,7 +69,7 @@ body{
 }
 
 
-.carousel-item img {
+#carouselExampleSlidesOnly .carousel-item img {
     filter: brightness(35%);
 }
 
@@ -110,7 +110,7 @@ ul {
 }
 
 .section h1 {
-    padding-bottom: 70px;
+    padding-bottom: 35px;
 }
 
 .services {
@@ -141,7 +141,7 @@ ul {
 .textOnCarousel svg {
     right: 0;
     left: 0;
-    top: 42px;
+    top: 100px;
     margin: 0 auto;
     width: 340px;
     transform: translateY(-50%) translateX(-10%);
@@ -152,6 +152,11 @@ ul {
 text {
     font-size: 30px;
 }
+.contactInfo,
+.nav-link{
+    font-size: 18px;
+    font-weight: bold;
+} 
 
 .textOnCarousel path {
     cursor: pointer;
@@ -310,7 +315,7 @@ footer{
 
 #aboutUS p, #aboutUS li{
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
 }
 
 .aboutUsSecondImg{
@@ -396,7 +401,7 @@ video{
 
 .plans {
     display: inline-block;
-    width: 250px;
+    width: 235px;
     margin: 1rem;
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
@@ -764,11 +769,11 @@ a[x-apple-data-detectors] {
     }
 }
 
-@media screen and (max-width:1300px) {
+/* @media screen and (max-width:1300px) {
     video{
         height: 100%;
     }
-}
+} */
 
 
 main{

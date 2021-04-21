@@ -23,6 +23,7 @@ body{
     height: 100% !important;
 }
 
+#carouselExampleSlidesOnly2,
 #carouselExampleSlidesOnly {
     height: 100vh;
     min-height: 100vh;
@@ -595,7 +596,7 @@ footer{
 
 @media (min-width: 992px){
     .show-mobile{
-        display: none;
+        display: none !important;
     }
 
     .navbar-expand-lg .navbar-collapse{
@@ -608,6 +609,8 @@ footer{
         display: flex;
         flex-direction: column;
     }
+
+    .hidden-mobile{display: none !important;}
 
     
     .show-desctop{
@@ -721,7 +724,7 @@ footer{
     }
 
     .card{
-        width: 8rem;
+        width: 9rem;
     }
     .card-img, .card-img-bottom, .card-img-top {
         max-height: 110px;

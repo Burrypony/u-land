@@ -161,7 +161,7 @@ text {
 .textOnCarousel path {
     cursor: pointer;
     animation: blob 2s infinite forwards;
-    -webkit-animation: webkit-blob 2s infinite forwards;
+    -webkit-animation: blob 2s infinite forwards;
     transform-origin: 50% 50%;
 }
 
